@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>test</title>
+    <link href="/2023/07/31/test/"/>
+    <url>/2023/07/31/test/</url>
+    
+    <content type="html"><![CDATA[<h1 id="此为测试页"><a href="#此为测试页" class="headerlink" title="此为测试页"></a>此为测试页</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>我的小世界</category>
+      
+      <category>测试功能页</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2023/07/30/hello-world/"/>
     <url>/2023/07/30/hello-world/</url>
