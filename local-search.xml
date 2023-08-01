@@ -4,25 +4,46 @@
   
   
   <entry>
-    <title>第一篇</title>
-    <link href="/2023/07/31/first/"/>
-    <url>/2023/07/31/first/</url>
+    <title>daily</title>
+    <link href="/2023/08/01/daily/"/>
+    <url>/2023/08/01/daily/</url>
     
-    <content type="html"><![CDATA[<h1 id="博客部署完第一篇"><a href="#博客部署完第一篇" class="headerlink" title="博客部署完第一篇"></a>博客部署完第一篇</h1><p>总结了一下主要为以下三点<br>…</p>]]></content>
+    <content type="html"><![CDATA[<p>天气：阴</p><p>^_^</p>]]></content>
     
     
     <categories>
       
-      <category>生活琐事</category>
+      <category>生活</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>随记</tag>
+      <tag>随笔</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>第一篇</title>
+    <link href="/2023/07/30/first/"/>
+    <url>/2023/07/30/first/</url>
+    
+    <content type="html"><![CDATA[<h1 id="博客部署完第一篇"><a href="#博客部署完第一篇" class="headerlink" title="博客部署完第一篇"></a>博客部署完第一篇</h1><p>总结了一下主要为以下三点<br>…</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术栈</category>
+      
+      <category>hexo</category>
+      
+    </categories>
+    
     
   </entry>
   
