@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Diary</title>
+    <link href="/2023/08/02/Diary/"/>
+    <url>/2023/08/02/Diary/</url>
+    
+    <content type="html"><![CDATA[<p>天气：晴</p><p>下班取眼镜</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>SqlServer中try_cast和try_convert</title>
     <link href="/2023/08/02/SqlServer%E4%B8%ADtry_cast%E5%92%8Ctry_convert/"/>
     <url>/2023/08/02/SqlServer%E4%B8%ADtry_cast%E5%92%8Ctry_convert/</url>
