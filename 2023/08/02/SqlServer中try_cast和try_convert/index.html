@@ -18,15 +18,15 @@
   <meta name="author" content="liu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="博客部署完第一篇总结了一下主要为以下三点…">
+    <meta name="description" content="我们通常习惯用&#x3D;&#x3D;CAST&#x3D;&#x3D;、&#x3D;&#x3D;CONVERT&#x3D;&#x3D;来进行数据转换  CAST1SELECT CAST(column_name AS data_type) FROM table_name;   column_name:  需要转换的列名 data_type:  需要转换为的数据类型 table_name:  表名">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇">
-<meta property="og:url" content="https://liujunxiang0076.asia/2023/07/30/first/index.html">
+<meta property="og:title" content="SqlServer中try_cast和try_convert">
+<meta property="og:url" content="https://liujunxiang0076.asia/2023/08/02/SqlServer%E4%B8%ADtry_cast%E5%92%8Ctry_convert/index.html">
 <meta property="og:site_name" content="liu&#39;s blog">
-<meta property="og:description" content="博客部署完第一篇总结了一下主要为以下三点…">
+<meta property="og:description" content="我们通常习惯用&#x3D;&#x3D;CAST&#x3D;&#x3D;、&#x3D;&#x3D;CONVERT&#x3D;&#x3D;来进行数据转换  CAST1SELECT CAST(column_name AS data_type) FROM table_name;   column_name:  需要转换的列名 data_type:  需要转换为的数据类型 table_name:  表名">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-30T01:48:11.000Z">
-<meta property="article:modified_time" content="2023-08-01T11:09:39.165Z">
+<meta property="article:published_time" content="2023-08-02T01:05:12.000Z">
+<meta property="article:modified_time" content="2023-08-02T02:37:10.286Z">
 <meta property="article:author" content="liu">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -34,7 +34,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>第一篇 - liu&#39;s blog</title>
+  <title>SqlServer中try_cast和try_convert - liu&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -234,7 +234,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="第一篇"></span>
+            <span id="subtitle" data-typed-text="SqlServer中try_cast和try_convert"></span>
           
         </div>
 
@@ -245,8 +245,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-30 09:48" pubdate>
-          2023年7月30日 上午
+        <time datetime="2023-08-02 09:05" pubdate>
+          2023年8月2日 上午
         </time>
       </span>
     
@@ -257,7 +257,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          21 字
+          632 字
         
       </span>
     
@@ -268,7 +268,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -305,12 +305,41 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">第一篇</h1>
+            <h1 id="seo-header">SqlServer中try_cast和try_convert</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="博客部署完第一篇"><a href="#博客部署完第一篇" class="headerlink" title="博客部署完第一篇"></a>博客部署完第一篇</h1><p>总结了一下主要为以下三点<br>…</p>
+                <p>我们通常习惯用&#x3D;&#x3D;CAST&#x3D;&#x3D;、&#x3D;&#x3D;CONVERT&#x3D;&#x3D;来进行数据转换</p>
+<ol>
+<li>CAST<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">CAST</span>(column_name <span class="hljs-keyword">AS</span> data_type) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>column_name:  需要转换的列名</li>
+<li>data_type:  需要转换为的数据类型</li>
+<li>table_name:  表名</li>
+</ul>
+<ol start="2">
+<li>CONVERT<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONVERT</span>(data_type, column_name, style) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>data_type：要转换的数据类型。</li>
+<li>column_name：要转换的列名。</li>
+<li>style: 转换格式</li>
+<li>table_name：要查询的表名。</li>
+</ul>
+<p><strong>在SQL Server 2012及以上版本中新增了TRY_CAST和TRY_CONVERT函数。</strong></p>
+<p>官网地址：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/sql/t-sql/functions/try-cast-transact-sql?view=sql-server-ver16">TRY_CAST</a></p>
+<ol start="3">
+<li>TRY_CAST<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> TRY_CAST(column_name <span class="hljs-keyword">AS</span> data_type) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>官网地址：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/sql/t-sql/functions/try-convert-transact-sql?view=sql-server-ver16">TRY_CONVERT</a></p>
+<ol start="4">
+<li>TRY_CONVERT<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> TRY_CONVERT(data_type, column_name) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
+</ol>
+<blockquote>
+<p>新增的对于原先的大同小异，主要是返回类型差异：新函数成功就返回转换为指定数据类型的值；否则返回 Null。<br>成功没什么好说的，关键在于失败是有返回值，当我们使用CAST和CONVERT失败了会直接报错，搞人心态！用了新函数确实少了很多麻烦</p>
+</blockquote>
 
                 
               </div>
@@ -334,8 +363,15 @@
   
     <span>></span>
     
-  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/hexo/" class="category-chain-item">hexo</a>
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-chain-item">数据库</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/%E6%95%B0%E6%8D%AE%E5%BA%93/SqlServer/" class="category-chain-item">SqlServer</a>
+  
+  
+
   
 
   
@@ -358,15 +394,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/01/Diary/" title="Diary">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Diary</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2023/08/01/Diary/" title="Diary">
+                        <span class="hidden-mobile">Diary</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
