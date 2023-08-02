@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>SqlServer中Merge用法</title>
+    <link href="/2023/08/02/SqlServer%E4%B8%ADMerge%E7%94%A8%E6%B3%95/"/>
+    <url>/2023/08/02/SqlServer%E4%B8%ADMerge%E7%94%A8%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>技术栈</category>
+      
+      <category>数据库</category>
+      
+      <category>SqlServer</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SQL</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>全局鼠标手势工具</title>
     <link href="/2023/08/02/%E5%85%A8%E5%B1%80%E9%BC%A0%E6%A0%87%E6%89%8B%E5%8A%BF%E5%B7%A5%E5%85%B7/"/>
     <url>/2023/08/02/%E5%85%A8%E5%B1%80%E9%BC%A0%E6%A0%87%E6%89%8B%E5%8A%BF%E5%B7%A5%E5%85%B7/</url>
@@ -15,17 +44,21 @@
       
       <category>资源分享</category>
       
-      <category>软件</category>
-      
     </categories>
     
+    
+    <tags>
+      
+      <tag>软件</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>Diary</title>
+    <title>2023-08-02</title>
     <link href="/2023/08/02/Diary/"/>
     <url>/2023/08/02/Diary/</url>
     
@@ -68,12 +101,18 @@
     </categories>
     
     
+    <tags>
+      
+      <tag>SQL</tag>
+      
+    </tags>
+    
   </entry>
   
   
   
   <entry>
-    <title>Diary</title>
+    <title>2023-08-01</title>
     <link href="/2023/08/01/Diary/"/>
     <url>/2023/08/01/Diary/</url>
     
