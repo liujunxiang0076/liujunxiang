@@ -18,24 +18,28 @@
   <meta name="author" content="liu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我们通常习惯用&#x3D;&#x3D;CAST&#x3D;&#x3D;、&#x3D;&#x3D;CONVERT&#x3D;&#x3D;来进行数据转换  CAST1SELECT CAST(column_name AS data_type) FROM table_name;   column_name:  需要转换的列名 data_type:  需要转换为的数据类型 table_name:  表名">
+    <meta name="description" content="hexo有些主题中没有设置网站运行时长，我也想折腾一个，就搜啊搜啊，最终找到了解决方案。 1.找文件在开发环境的node_modules中，搜索主题的名字，我滴的是Fluid  然后hexo-theme-xxxx-&gt;layout-&gt;_partials-&gt;footer进入footer文件目录  进入statistics.ejs文件进行编辑 2.编辑文件 红色框起来的是Fluid展示">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SqlServer中try_cast和try_convert">
-<meta property="og:url" content="https://liujunxiang0076.asia/2023/08/02/SqlServer%E4%B8%ADtry_cast%E5%92%8Ctry_convert/index.html">
+<meta property="og:title" content="hexo添加网站运行时间">
+<meta property="og:url" content="https://liujunxiang0076.asia/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/index.html">
 <meta property="og:site_name" content="liu&#39;s blog">
-<meta property="og:description" content="我们通常习惯用&#x3D;&#x3D;CAST&#x3D;&#x3D;、&#x3D;&#x3D;CONVERT&#x3D;&#x3D;来进行数据转换  CAST1SELECT CAST(column_name AS data_type) FROM table_name;   column_name:  需要转换的列名 data_type:  需要转换为的数据类型 table_name:  表名">
+<meta property="og:description" content="hexo有些主题中没有设置网站运行时长，我也想折腾一个，就搜啊搜啊，最终找到了解决方案。 1.找文件在开发环境的node_modules中，搜索主题的名字，我滴的是Fluid  然后hexo-theme-xxxx-&gt;layout-&gt;_partials-&gt;footer进入footer文件目录  进入statistics.ejs文件进行编辑 2.编辑文件 红色框起来的是Fluid展示">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-02T01:05:12.000Z">
-<meta property="article:modified_time" content="2023-08-02T06:43:51.074Z">
+<meta property="og:image" content="https://liujunxiang0076.asia/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803132603140.png">
+<meta property="og:image" content="https://liujunxiang0076.asia/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803132842418.png">
+<meta property="og:image" content="https://liujunxiang0076.asia/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803133136942.png">
+<meta property="og:image" content="https://liujunxiang0076.asia/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803133457001.png">
+<meta property="article:published_time" content="2023-08-03T05:13:23.000Z">
+<meta property="article:modified_time" content="2023-08-03T05:38:43.318Z">
 <meta property="article:author" content="liu">
-<meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://liujunxiang0076.asia/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803132603140.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>SqlServer中try_cast和try_convert - liu&#39;s blog</title>
+  <title>hexo添加网站运行时间 - liu&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -235,7 +239,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="SqlServer中try_cast和try_convert"></span>
+            <span id="subtitle" data-typed-text="hexo添加网站运行时间"></span>
           
         </div>
 
@@ -246,8 +250,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-02 09:05" pubdate>
-          2023年8月2日 上午
+        <time datetime="2023-08-03 13:13" pubdate>
+          2023年8月3日 下午
         </time>
       </span>
     
@@ -258,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          632 字
+          1.5k 字
         
       </span>
     
@@ -269,7 +273,7 @@
         
         
         
-          6 分钟
+          13 分钟
         
       </span>
     
@@ -306,41 +310,27 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">SqlServer中try_cast和try_convert</h1>
+            <h1 id="seo-header">hexo添加网站运行时间</h1>
             
             
               <div class="markdown-body">
                 
-                <p>我们通常习惯用&#x3D;&#x3D;CAST&#x3D;&#x3D;、&#x3D;&#x3D;CONVERT&#x3D;&#x3D;来进行数据转换</p>
-<ol>
-<li>CAST<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">CAST</span>(column_name <span class="hljs-keyword">AS</span> data_type) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>column_name:  需要转换的列名</li>
-<li>data_type:  需要转换为的数据类型</li>
-<li>table_name:  表名</li>
-</ul>
-<ol start="2">
-<li>CONVERT<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONVERT</span>(data_type, column_name, style) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>data_type：要转换的数据类型。</li>
-<li>column_name：要转换的列名。</li>
-<li>style: 转换格式</li>
-<li>table_name：要查询的表名。</li>
-</ul>
-<p><strong>在SQL Server 2012及以上版本中新增了TRY_CAST和TRY_CONVERT函数。</strong></p>
-<p>官网地址：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/sql/t-sql/functions/try-cast-transact-sql?view=sql-server-ver16">TRY_CAST</a></p>
-<ol start="3">
-<li>TRY_CAST<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> TRY_CAST(column_name <span class="hljs-keyword">AS</span> data_type) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
-</ol>
-<p>官网地址：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/sql/t-sql/functions/try-convert-transact-sql?view=sql-server-ver16">TRY_CONVERT</a></p>
-<ol start="4">
-<li>TRY_CONVERT<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> TRY_CONVERT(data_type, column_name) <span class="hljs-keyword">FROM</span> table_name;<br></code></pre></td></tr></table></figure></li>
-</ol>
-<blockquote>
-<p>新增的对于原先的大同小异，主要是返回类型差异：新函数成功就返回转换为指定数据类型的值；否则返回 Null。<br>成功没什么好说的，关键在于失败是有返回值，当我们使用CAST和CONVERT失败了会直接报错，搞人心态！用了新函数确实少了很多麻烦</p>
-</blockquote>
+                <p>hexo有些主题中没有设置网站运行时长，我也想折腾一个，就搜啊搜啊，最终找到了解决方案。</p>
+<h2 id="1-找文件"><a href="#1-找文件" class="headerlink" title="1.找文件"></a>1.找文件</h2><p>在开发环境的<code>node_modules</code>中，搜索主题的名字，我滴的是<strong>Fluid</strong></p>
+<p><img src="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803132603140.png" srcset="/img/loading.gif" lazyload alt="查找主题"></p>
+<p>然后<code>hexo-theme-xxxx</code>-&gt;<code>layout</code>-&gt;<code>_partials</code>-&gt;<code>footer</code>进入footer文件目录</p>
+<p><img src="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803132842418.png" srcset="/img/loading.gif" lazyload alt="footer文件目录"></p>
+<p>进入<code>statistics.ejs</code>文件进行编辑</p>
+<h2 id="2-编辑文件"><a href="#2-编辑文件" class="headerlink" title="2.编辑文件"></a>2.编辑文件</h2><p><img src="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803133136942.png" srcset="/img/loading.gif" lazyload alt="文件内容"></p>
+<p><strong>红色框起来的是Fluid展示PV与UV统计的，配置在主题的配置文件，不用管，我们把下方计算运行时长代码复制展示统计的上方，上图我已经复制过了</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs javascript">&lt;div&gt;<br>  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;timeDate&quot;</span>&gt;</span>载入天数...<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;times&quot;</span>&gt;</span>载入时分秒...<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><br>  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="language-javascript"><span class="language-xml">    <span class="hljs-keyword">var</span> now = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>(); </span></span><br><span class="language-javascript"><span class="language-xml">    <span class="hljs-keyword">function</span> <span class="hljs-title function_">createtime</span>(<span class="hljs-params"></span>) &#123; </span></span><br><span class="language-javascript"><span class="language-xml">        <span class="hljs-keyword">var</span> webCreatetime= <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>(<span class="hljs-string">&quot;07/30/2023 17:30:00&quot;</span>);<span class="hljs-comment">//在此处修改你的建站时间</span></span></span><br><span class="language-javascript"><span class="language-xml">        now.<span class="hljs-title function_">setTime</span>(now.<span class="hljs-title function_">getTime</span>()+<span class="hljs-number">250</span>); </span></span><br><span class="language-javascript"><span class="language-xml">        days = (now - webCreatetime ) / <span class="hljs-number">1000</span> / <span class="hljs-number">60</span> / <span class="hljs-number">60</span> / <span class="hljs-number">24</span>; </span></span><br><span class="language-javascript"><span class="language-xml">        dayNum = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(days); </span></span><br><span class="language-javascript"><span class="language-xml">        hours = (now - webCreatetime ) / <span class="hljs-number">1000</span> / <span class="hljs-number">60</span> / <span class="hljs-number">60</span> - (<span class="hljs-number">24</span> * dayNum); </span></span><br><span class="language-javascript"><span class="language-xml">        hourNum = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(hours); </span></span><br><span class="language-javascript"><span class="language-xml">        <span class="hljs-keyword">if</span>(<span class="hljs-title class_">String</span>(hourNum).<span class="hljs-property">length</span> ==<span class="hljs-number">1</span> )&#123;hourNum = <span class="hljs-string">&quot;0&quot;</span> + hourNum;&#125; </span></span><br><span class="language-javascript"><span class="language-xml">        minutes = (now - webCreatetime ) / <span class="hljs-number">1000</span> /<span class="hljs-number">60</span> - (<span class="hljs-number">24</span> * <span class="hljs-number">60</span> * dayNum) - (<span class="hljs-number">60</span> * hourNum); </span></span><br><span class="language-javascript"><span class="language-xml">        monthNum = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(minutes); </span></span><br><span class="language-javascript"><span class="language-xml">        <span class="hljs-keyword">if</span>(<span class="hljs-title class_">String</span>(monthNum).<span class="hljs-property">length</span> ==<span class="hljs-number">1</span> )&#123;monthNum = <span class="hljs-string">&quot;0&quot;</span> + monthNum;&#125; </span></span><br><span class="language-javascript"><span class="language-xml">        seconds = (now - webCreatetime ) / <span class="hljs-number">1000</span> - (<span class="hljs-number">24</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * dayNum) - (<span class="hljs-number">60</span> * <span class="hljs-number">60</span> * hourNum) - (<span class="hljs-number">60</span> * monthNum); </span></span><br><span class="language-javascript"><span class="language-xml">        snum = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">round</span>(seconds); </span></span><br><span class="language-javascript"><span class="language-xml">        <span class="hljs-keyword">if</span>(<span class="hljs-title class_">String</span>(snum).<span class="hljs-property">length</span> ==<span class="hljs-number">1</span> )&#123;snum = <span class="hljs-string">&quot;0&quot;</span> + snum;&#125; </span></span><br><span class="language-javascript"><span class="language-xml">        <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;timeDate&quot;</span>).<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&quot;已运行 &quot;</span>+dayNum+<span class="hljs-string">&quot; 天 &quot;</span>; </span></span><br><span class="language-javascript"><span class="language-xml">        <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;times&quot;</span>).<span class="hljs-property">innerHTML</span> = hourNum + <span class="hljs-string">&quot; 小时 &quot;</span> + monthNum + <span class="hljs-string">&quot; 分 &quot;</span> + snum + <span class="hljs-string">&quot; 秒&quot;</span>; </span></span><br><span class="language-javascript"><span class="language-xml">    &#125; </span></span><br><span class="language-javascript"><span class="language-xml">    <span class="hljs-built_in">setInterval</span>(<span class="hljs-string">&quot;createtime()&quot;</span>,<span class="hljs-number">250</span>);</span></span><br><span class="language-javascript"><span class="language-xml">  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-效果呈现"><a href="#3-效果呈现" class="headerlink" title="3.效果呈现"></a>3.效果呈现</h2><p>保存后，本机直接看</p>
+<p><img src="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/image-20230803133457001.png" srcset="/img/loading.gif" lazyload alt="效果"></p>
+<p>ok，大功告成👍👍👍👍👍</p>
+<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p>我使用的是Fluid主题，其他主题的位置可能会不一样，总之搜索<code>footer</code>关键字就行，都是有命名规范的</p>
 
                 
               </div>
@@ -364,15 +354,8 @@
   
     <span>></span>
     
-  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-chain-item">数据库</a>
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/hexo/" class="category-chain-item">hexo</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/%E6%95%B0%E6%8D%AE%E5%BA%93/SqlServer/" class="category-chain-item">SqlServer</a>
-  
-  
-
   
 
   
@@ -385,13 +368,6 @@
     </div>
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/SQL/" class="print-no-link">#SQL</a>
-      
-    </div>
-  
 </div>
 
 
@@ -402,18 +378,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/02/Diary/" title="2023-08-02">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">2023-08-02</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/01/Diary/" title="2023-08-01">
-                        <span class="hidden-mobile">2023-08-01</span>
+                      <a href="/2023/08/03/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/" title="阿里云盘自动签到">
+                        <span class="hidden-mobile">阿里云盘自动签到</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -254,7 +254,7 @@
                 
 
 <div class="list-group">
-  <p class="h4">共计 7 篇文章</p>
+  <p class="h4">共计 8 篇文章</p>
   <hr>
   
   
@@ -322,23 +322,28 @@
   
   
     <div>
-<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-<script>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  <script>
     var now = new Date(); 
     function createtime() { 
-        var grt= new Date("08/10/2020 00:00:00");//在此处修改你的建站时间
+        var webCreatetime= new Date("07/30/2023 17:30:00");//在此处修改你的建站时间
         now.setTime(now.getTime()+250); 
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "已运行 "+dnum+" 天 "; 
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+        days = (now - webCreatetime ) / 1000 / 60 / 60 / 24; 
+        dayNum = Math.floor(days); 
+        hours = (now - webCreatetime ) / 1000 / 60 / 60 - (24 * dayNum); 
+        hourNum = Math.floor(hours); 
+        if(String(hourNum).length ==1 ){hourNum = "0" + hourNum;} 
+        minutes = (now - webCreatetime ) / 1000 /60 - (24 * 60 * dayNum) - (60 * hourNum); 
+        monthNum = Math.floor(minutes); 
+        if(String(monthNum).length ==1 ){monthNum = "0" + monthNum;} 
+        seconds = (now - webCreatetime ) / 1000 - (24 * 60 * 60 * dayNum) - (60 * 60 * hourNum) - (60 * monthNum); 
+        snum = Math.round(seconds); 
+        if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "已运行 "+dayNum+" 天 "; 
+        document.getElementById("times").innerHTML = hourNum + " 小时 " + monthNum + " 分 " + snum + " 秒"; 
     } 
-setInterval("createtime()",250);
-</script>
+    setInterval("createtime()",250);
+  </script>
 </div>
 
 <div class="statistics">

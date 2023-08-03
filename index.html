@@ -264,6 +264,67 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" target="_self">
+          hexo添加网站运行时间
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" target="_self">
+        <div>
+          hexo有些主题中没有设置网站运行时长，我也想折腾一个，就搜啊搜啊，最终找到了解决方案。 1.找文件在开发环境的node_modules中，搜索主题的名字，我滴的是Fluid  然后hexo-theme-xxxx-&gt;layout-&gt;_partials-&gt;footer进入footer文件目录  进入statistics.ejs文件进行编辑 2.编辑文件 红色框起来的是Fluid展示
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-03 13:13" pubdate>
+              2023-08-03
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/" class="category-chain-item">技术栈</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/hexo/" class="category-chain-item">hexo</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2023/08/03/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/" target="_self">
           阿里云盘自动签到
         </a>
@@ -766,23 +827,28 @@
   
   
     <div>
-<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-<script>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  <script>
     var now = new Date(); 
     function createtime() { 
-        var grt= new Date("08/10/2020 00:00:00");//在此处修改你的建站时间
+        var webCreatetime= new Date("07/30/2023 17:30:00");//在此处修改你的建站时间
         now.setTime(now.getTime()+250); 
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "已运行 "+dnum+" 天 "; 
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+        days = (now - webCreatetime ) / 1000 / 60 / 60 / 24; 
+        dayNum = Math.floor(days); 
+        hours = (now - webCreatetime ) / 1000 / 60 / 60 - (24 * dayNum); 
+        hourNum = Math.floor(hours); 
+        if(String(hourNum).length ==1 ){hourNum = "0" + hourNum;} 
+        minutes = (now - webCreatetime ) / 1000 /60 - (24 * 60 * dayNum) - (60 * hourNum); 
+        monthNum = Math.floor(minutes); 
+        if(String(monthNum).length ==1 ){monthNum = "0" + monthNum;} 
+        seconds = (now - webCreatetime ) / 1000 - (24 * 60 * 60 * dayNum) - (60 * 60 * hourNum) - (60 * monthNum); 
+        snum = Math.round(seconds); 
+        if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "已运行 "+dayNum+" 天 "; 
+        document.getElementById("times").innerHTML = hourNum + " 小时 " + monthNum + " 分 " + snum + " 秒"; 
     } 
-setInterval("createtime()",250);
-</script>
+    setInterval("createtime()",250);
+  </script>
 </div>
 
 <div class="statistics">
