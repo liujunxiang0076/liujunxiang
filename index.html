@@ -272,7 +272,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" target="_self">
         <div>
-          hexo有些主题中没有设置网站运行时长，我也想折腾一个，就搜啊搜啊，最终找到了解决方案。 1.找文件在开发环境的node_modules中，搜索主题的名字，我滴的是Fluid  然后hexo-theme-xxxx-&gt;layout-&gt;_partials-&gt;footer进入footer文件目录  进入statistics.ejs文件进行编辑 2.编辑文件 红色框起来的是Fluid展示
+          hexo有些主题中没有设置网站运行时长，我也想折腾一个，就搜啊搜啊，最终找到了解决方案。官方解决方案：https://hexo.fluid-dev.com/posts/fluid-footer-custom/ 以下是寻来的 1.找文件在开发环境的node_modules中，搜索主题的名字，我滴的是Fluid  然后hexo-theme-xxxx-&gt;layout-&gt;_partials-&
         </div>
       </a>
 
@@ -700,36 +700,11 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-      <div>我滴个人博客 | 记录成长过程</div>
+       <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
     </div>
   
   
-    <div>
-  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-  <script>
-    var now = new Date(); 
-    function createtime() { 
-        var webCreatetime= new Date("07/30/2023 17:30:00");//在此处修改你的建站时间
-        now.setTime(now.getTime()+250); 
-        days = (now - webCreatetime ) / 1000 / 60 / 60 / 24; 
-        dayNum = Math.floor(days); 
-        hours = (now - webCreatetime ) / 1000 / 60 / 60 - (24 * dayNum); 
-        hourNum = Math.floor(hours); 
-        if(String(hourNum).length ==1 ){hourNum = "0" + hourNum;} 
-        minutes = (now - webCreatetime ) / 1000 /60 - (24 * 60 * dayNum) - (60 * hourNum); 
-        monthNum = Math.floor(minutes); 
-        if(String(monthNum).length ==1 ){monthNum = "0" + monthNum;} 
-        seconds = (now - webCreatetime ) / 1000 - (24 * 60 * 60 * dayNum) - (60 * 60 * hourNum) - (60 * monthNum); 
-        snum = Math.round(seconds); 
-        if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "已运行 "+dayNum+" 天 "; 
-        document.getElementById("times").innerHTML = hourNum + " 小时 " + monthNum + " 分 " + snum + " 秒"; 
-    } 
-    setInterval("createtime()",250);
-  </script>
-</div>
-
-<div class="statistics">
+    <div class="statistics">
   
   
 

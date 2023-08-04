@@ -375,6 +375,57 @@
     
     <div class="category-sub row nomargin-x">
       <a class="category-subitem collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="hexo"
+        id="heading-ecf1af8bbe2a3020d96fe7ea971a03ad" role="tab" data-toggle="collapse" href="#collapse-ecf1af8bbe2a3020d96fe7ea971a03ad"
+        aria-expanded="false"
+      >
+        hexo
+        <span class="list-group-count"></span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+        <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/hexo/" class="category-count col-2 col-md-1 col-xm-1">
+          <i class="iconfont icon-articles"></i>
+          <span>2</span>
+        </a>
+      
+      <div class="category-collapse collapse " id="collapse-ecf1af8bbe2a3020d96fe7ea971a03ad"
+           role="tabpanel" aria-labelledby="heading-ecf1af8bbe2a3020d96fe7ea971a03ad">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" title="hexo添加网站运行时间"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">hexo添加网站运行时间</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/07/30/first/" title="第一篇"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">第一篇</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="数据库"
         id="heading-68051bf4aa2743b030984b694628ee9c" role="tab" data-toggle="collapse" href="#collapse-68051bf4aa2743b030984b694628ee9c"
         aria-expanded="false"
@@ -453,57 +504,6 @@
       </div>
     </div>
   
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div class="category-sub row nomargin-x">
-      <a class="category-subitem collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="hexo"
-        id="heading-ecf1af8bbe2a3020d96fe7ea971a03ad" role="tab" data-toggle="collapse" href="#collapse-ecf1af8bbe2a3020d96fe7ea971a03ad"
-        aria-expanded="false"
-      >
-        hexo
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-        <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/hexo/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>2</span>
-        </a>
-      
-      <div class="category-collapse collapse " id="collapse-ecf1af8bbe2a3020d96fe7ea971a03ad"
-           role="tabpanel" aria-labelledby="heading-ecf1af8bbe2a3020d96fe7ea971a03ad">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/2023/08/03/hexo%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" title="hexo添加网站运行时间"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">hexo添加网站运行时间</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/07/30/first/" title="第一篇"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">第一篇</span>
-        </a>
-      
-    
-  </div>
-
         
       </div>
     </div>
@@ -646,36 +646,11 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-      <div>我滴个人博客 | 记录成长过程</div>
+       <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
     </div>
   
   
-    <div>
-  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-  <script>
-    var now = new Date(); 
-    function createtime() { 
-        var webCreatetime= new Date("07/30/2023 17:30:00");//在此处修改你的建站时间
-        now.setTime(now.getTime()+250); 
-        days = (now - webCreatetime ) / 1000 / 60 / 60 / 24; 
-        dayNum = Math.floor(days); 
-        hours = (now - webCreatetime ) / 1000 / 60 / 60 - (24 * dayNum); 
-        hourNum = Math.floor(hours); 
-        if(String(hourNum).length ==1 ){hourNum = "0" + hourNum;} 
-        minutes = (now - webCreatetime ) / 1000 /60 - (24 * 60 * dayNum) - (60 * hourNum); 
-        monthNum = Math.floor(minutes); 
-        if(String(monthNum).length ==1 ){monthNum = "0" + monthNum;} 
-        seconds = (now - webCreatetime ) / 1000 - (24 * 60 * 60 * dayNum) - (60 * 60 * hourNum) - (60 * monthNum); 
-        snum = Math.round(seconds); 
-        if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "已运行 "+dayNum+" 天 "; 
-        document.getElementById("times").innerHTML = hourNum + " 小时 " + monthNum + " 分 " + snum + " 秒"; 
-    } 
-    setInterval("createtime()",250);
-  </script>
-</div>
-
-<div class="statistics">
+    <div class="statistics">
   
   
 
