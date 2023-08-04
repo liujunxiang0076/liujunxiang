@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="SqlServer中Merge用法">
 <meta property="og:url" content="https://liujunxiang0076.asia/2023/08/02/SqlServer%E4%B8%ADMerge%E7%94%A8%E6%B3%95/index.html">
-<meta property="og:site_name" content="liu&#39;s blog">
+<meta property="og:site_name" content="liu">
 <meta property="og:description" content="需求：客户有台电脑专门存放着实时监测数据，并存到SqlServer数据库中；可客户说如果电脑关了数据就不会继续存入并且也去不到数据了，现在需要取出里面数据进行分析 解决方案：通过转存数据到另一个服务器的数据库表中，并定时取数存到一个可长期访问的库里 操作步骤：  复制表结构，并添加个update_time字段，以便记录更新时间  更换数据库地址，选择数据库并执行语句。  Merge语句格式 MER">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://liujunxiang0076.asia/2023/08/02/SqlServer%E4%B8%ADMerge%E7%94%A8%E6%B3%95/image-20230802153902949.png">
@@ -41,7 +41,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>SqlServer中Merge用法 - liu&#39;s blog</title>
+  <title>SqlServer中Merge用法 - liu</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
