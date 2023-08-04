@@ -8,7 +8,7 @@
     <link href="/2023/08/04/Diary/"/>
     <url>/2023/08/04/Diary/</url>
     
-    <content type="html"><![CDATA[<p>天气：晴<br>早上浇植物，都忘记了，已经快枯了</p>]]></content>
+    <content type="html"><![CDATA[<p>天气：晴<br>早上浇植物，都忘记了，已经快枯了</p><p>今天终于体验到了smartbi v11 版本，最近有空，慢慢折腾</p>]]></content>
     
     
     <categories>
@@ -258,7 +258,7 @@
     <link href="/2023/07/30/first/"/>
     <url>/2023/07/30/first/</url>
     
-    <content type="html"><![CDATA[<h1 id="博客部署完第一篇"><a href="#博客部署完第一篇" class="headerlink" title="博客部署完第一篇"></a>博客部署完第一篇</h1><p>用<a href="https://hexo.io/zh-cn/">Hexo</a>博客框架<a href="https://hexo.fluid-dev.com/docs/">Fluid</a>主题托管在github page里，域名在腾讯云买的四块钱一年的(到时候再捡捡漏)，DNS服务器换成了<a href="https://www.cloudflare-cn.com/">Cloudflare</a>这样访问速度会好一点(毕竟免费的，不然就科学上网)。博客的源码放到了gitee上这样方便提交，如果网站部署到gitee上需要实名认证备案，我一小网站就不折腾了。</p><img src="/2023/07/30/first/07/30/first/image-20230802220236445.png" class title="image-20230802220236445"><blockquote><p>先前用的是<a href="https://halo.run/">Halo</a>，很不错用Java写的，拥有好的后台管理操作界面；但云服务有点贵，本人消费不起，虽然腾讯云25岁以下享学生优惠会便宜很多，可是白嫖实在太香了！！！</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="博客部署完第一篇"><a href="#博客部署完第一篇" class="headerlink" title="博客部署完第一篇"></a>博客部署完第一篇</h1><p>用<a href="https://hexo.io/zh-cn/">Hexo</a>博客框架<a href="https://hexo.fluid-dev.com/docs/">Fluid</a>主题托管在github page里，域名在腾讯云买的四块钱一年的(到时候再捡捡漏)，DNS服务器换成了<a href="https://www.cloudflare-cn.com/">Cloudflare</a>这样访问速度会好一点(毕竟免费的，不然就科学上网)。博客的源码放到了gitee上这样方便提交，如果网站部署到gitee上需要实名认证备案，我一小网站就不折腾了。</p><img src="/2023/07/30/first/07/30/first/Snipaste_2023-08-02_22-02-21.png" class title="域名"><blockquote><p>先前用的是<a href="https://halo.run/">Halo</a>，很不错用Java写的，拥有好的后台管理操作界面；但云服务有点贵，本人消费不起，虽然腾讯云25岁以下享学生优惠会便宜很多，可是白嫖实在太香了！！！</p></blockquote>]]></content>
     
     
     <categories>
