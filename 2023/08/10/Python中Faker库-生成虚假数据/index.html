@@ -21,17 +21,17 @@
     <meta name="description" content="基本用法1.pip安装1pip install Faker    2.引用12345678from faker import Fakerfake &#x3D; Faker(locale&#x3D;&amp;#x27;zh_CN&amp;#x27;) # 默认英文，中文设置为&quot;zh_CN&quot;print (fake.email())print(fake.country())print(fake.name())print">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python中Faker库(生成虚假数据)">
-<meta property="og:url" content="https://liujunxiang0076.asia/2023/08/10/Python%E4%B8%ADFaker%E5%BA%93-%E7%94%9F%E6%88%90%E8%99%9A%E5%81%87%E6%95%B0%E6%8D%AE/index.html">
+<meta property="og:url" content="https://blog.liujunxiang0076.site/2023/08/10/Python%E4%B8%ADFaker%E5%BA%93-%E7%94%9F%E6%88%90%E8%99%9A%E5%81%87%E6%95%B0%E6%8D%AE/index.html">
 <meta property="og:site_name" content="liu">
 <meta property="og:description" content="基本用法1.pip安装1pip install Faker    2.引用12345678from faker import Fakerfake &#x3D; Faker(locale&#x3D;&amp;#x27;zh_CN&amp;#x27;) # 默认英文，中文设置为&quot;zh_CN&quot;print (fake.email())print(fake.country())print(fake.name())print">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://liujunxiang0076.asia/2023/08/10/Python%E4%B8%ADFaker%E5%BA%93-%E7%94%9F%E6%88%90%E8%99%9A%E5%81%87%E6%95%B0%E6%8D%AE/image-20230810100057820.png">
+<meta property="og:image" content="https://blog.liujunxiang0076.site/2023/08/10/Python%E4%B8%ADFaker%E5%BA%93-%E7%94%9F%E6%88%90%E8%99%9A%E5%81%87%E6%95%B0%E6%8D%AE/image-20230810100057820.png">
 <meta property="article:published_time" content="2023-08-10T01:11:46.000Z">
 <meta property="article:modified_time" content="2023-08-23T06:02:35.243Z">
 <meta property="article:author" content="liu">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://liujunxiang0076.asia/2023/08/10/Python%E4%B8%ADFaker%E5%BA%93-%E7%94%9F%E6%88%90%E8%99%9A%E5%81%87%E6%95%B0%E6%8D%AE/image-20230810100057820.png">
+<meta name="twitter:image" content="https://blog.liujunxiang0076.site/2023/08/10/Python%E4%B8%ADFaker%E5%BA%93-%E7%94%9F%E6%88%90%E8%99%9A%E5%81%87%E6%95%B0%E6%8D%AE/image-20230810100057820.png">
   
   
   
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"liujunxiang0076.asia","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"imLnNXJmGafgiZodDGJDEDSH-gzGzoHsz","app_key":"aQZN1MiiTZOitt5UZFNg6R5j","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.liujunxiang0076.site","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"imLnNXJmGafgiZodDGJDEDSH-gzGzoHsz","app_key":"aQZN1MiiTZOitt5UZFNg6R5j","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -117,7 +117,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -139,7 +139,7 @@
                   
                   
                   
-                  <a class="dropdown-item" href="/archives/">
+                  <a class="dropdown-item" href="/archives/" target="_self">
                     <i class="iconfont icon-archive-fill"></i>
                     <span>归档</span>
                   </a>
@@ -147,7 +147,7 @@
                   
                   
                   
-                  <a class="dropdown-item" href="/categories/">
+                  <a class="dropdown-item" href="/categories/" target="_self">
                     <i class="iconfont icon-category-fill"></i>
                     <span>分类</span>
                   </a>
@@ -155,7 +155,7 @@
                   
                   
                   
-                  <a class="dropdown-item" href="/tags/">
+                  <a class="dropdown-item" href="/tags/" target="_self">
                     <i class="iconfont icon-tags-fill"></i>
                     <span>标签</span>
                   </a>
@@ -169,7 +169,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          531 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          18 分钟
+          5 分钟
         
       </span>
     
@@ -283,11 +283,13 @@
           <article class="post-content mx-auto">
             <h1 id="seo-header">Python中Faker库(生成虚假数据)</h1>
             
-              <p class="note note-info">
+              <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于：5 天前
+                    本文最后更新于 2023-08-23T14:02:35+08:00
                   
+                  
+
                 
               </p>
             
@@ -302,7 +304,7 @@
 
 <p>输出成功(每次都不同)：</p>
 <div class="note note-success">
-            <p><a href="mailto:&#x6e;&#x77;&#x61;&#110;&#64;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#110;&#101;&#x74;">&#x6e;&#x77;&#x61;&#110;&#64;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#110;&#101;&#x74;</a><br>所罗门群岛<br>李龙<br>点击看到需要有些其他品牌到了.今天的话经验非常活动中国以上.主要安全推荐中心男人谢谢系统.<br>标准经济一次一下.不能电话不断免费根据阅读.主题地方帮助工具只要说明.<br>下载标题文章她的只是联系公司.本站得到密码结果文件同时.查看等级问题全国工程实现.<br>不要不过音乐然后成为资源.朋友自己开发虽然是否组织帖子运行.拥有生产文章计划操作语言.<br>投资为什应该那么.<br>-4.851112 -105.639433</p>
+            <p><a href="mailto:&#110;&#119;&#97;&#110;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#110;&#101;&#116;">&#110;&#119;&#97;&#110;&#64;&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#110;&#101;&#116;</a><br>所罗门群岛<br>李龙<br>点击看到需要有些其他品牌到了.今天的话经验非常活动中国以上.主要安全推荐中心男人谢谢系统.<br>标准经济一次一下.不能电话不断免费根据阅读.主题地方帮助工具只要说明.<br>下载标题文章她的只是联系公司.本站得到密码结果文件同时.查看等级问题全国工程实现.<br>不要不过音乐然后成为资源.朋友自己开发虽然是否组织帖子运行.拥有生产文章计划操作语言.<br>投资为什应该那么.<br>-4.851112 -105.639433</p>
           </div>
 
 <h3 id="3-小应用"><a href="#3-小应用" class="headerlink" title="3.小应用"></a>3.小应用</h3><h4 id="应用1"><a href="#应用1" class="headerlink" title="应用1"></a>应用1</h4><p><span class="label label-primary">创建一个包含100名学生的json，名为students.json，其中包含学生姓名、地址、位置坐标和学生学号。</span></p>
@@ -317,7 +319,7 @@
 
 <p>输出结果：</p>
 <div class="note note-success">
-            <p>{‘job’: ‘宠物护理&#x2F;美容’, ‘company’: ‘彩虹传媒有限公司’, ‘ssn’: ‘653100197810109931’, ‘residence’: ‘河北省小红市清城澳门路W座 804179’, ‘current_location’: (Decimal(‘77.879188’), Decimal(‘115.676105’)), ‘blood_group’: ‘O+’, ‘website’: [‘<a target="_blank" rel="noopener" href="http://www.yaotian.cn/">http://www.yaotian.cn/</a>‘, ‘<a target="_blank" rel="noopener" href="http://gu.cn/">http://gu.cn/</a>‘, ‘<a target="_blank" rel="noopener" href="http://jing.cn/">http://jing.cn/</a>‘, ‘<a target="_blank" rel="noopener" href="http://qp.org/']">http://qp.org/&#39;]</a>, ‘username’: ‘shijie’, ‘name’: ‘彭斌’, ‘sex’: ‘F’, ‘address’: ‘香港特别行政区玉英市静安合肥路Z座 362979’, ‘mail’: ‘<a href="mailto:&#113;&#x69;&#97;&#110;&#109;&#x69;&#110;&#103;&#64;&#104;&#111;&#116;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#113;&#x69;&#97;&#110;&#109;&#x69;&#110;&#103;&#64;&#104;&#111;&#116;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;</a>‘, ‘birthdate’: datetime.date(2014, 12, 10)}</p>
+            <p>{‘job’: ‘宠物护理&#x2F;美容’, ‘company’: ‘彩虹传媒有限公司’, ‘ssn’: ‘653100197810109931’, ‘residence’: ‘河北省小红市清城澳门路W座 804179’, ‘current_location’: (Decimal(‘77.879188’), Decimal(‘115.676105’)), ‘blood_group’: ‘O+’, ‘website’: [‘<a target="_blank" rel="noopener" href="http://www.yaotian.cn/">http://www.yaotian.cn/</a>‘, ‘<a target="_blank" rel="noopener" href="http://gu.cn/">http://gu.cn/</a>‘, ‘<a target="_blank" rel="noopener" href="http://jing.cn/">http://jing.cn/</a>‘, ‘<a target="_blank" rel="noopener" href="http://qp.org/']">http://qp.org/&#39;]</a>, ‘username’: ‘shijie’, ‘name’: ‘彭斌’, ‘sex’: ‘F’, ‘address’: ‘香港特别行政区玉英市静安合肥路Z座 362979’, ‘mail’: ‘<a href="mailto:&#x71;&#105;&#x61;&#x6e;&#109;&#105;&#x6e;&#x67;&#64;&#x68;&#111;&#116;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#x71;&#105;&#x61;&#x6e;&#109;&#105;&#x6e;&#x67;&#64;&#x68;&#111;&#116;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;</a>‘, ‘birthdate’: datetime.date(2014, 12, 10)}</p>
           </div>
 
 
@@ -577,6 +579,33 @@
   
 
 
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'zh-cn'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/zh-cn.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
 
 
   
