@@ -380,20 +380,21 @@
   
     <article id="comments" lazyload>
       
-  <div id="valine"></div>
+  <div id="waline"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
+      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
         var options = Object.assign(
-          {"appId":"5QdDmyh6cMBLkvc1CW6zTxhc-gzGzoHsz","appKey":"rM5GLtAUyFOiOyj3vaoBWS2b","path":"window.location.pathname","placeholder":"吐槽","avatar":"mp","meta":["nick","mail","link"],"requiredFields":["nick"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"https://5qddmyh6.lc-cn-n1-shared.com","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"enable":true,"appid":"5QdDmyh6cMBLkvc1CW6zTxhc-gzGzoHsz","appkey":"rM5GLtAUyFOiOyj3vaoBWS2b","visiter":true},
+          {"serverURL":"https://waline-blush-eight-92.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":[],"lang":"zh-CN","emoji":["//unpkg.com/@waline/emojis@1.1.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/soul-emoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"enable":true,"placeholder":"吐槽","avatar":"mp","visiter":true,"highlight":false,"recordIP":false,"reaction":false},
           {
-            el: "#valine",
+            el: '#waline',
             path: window.location.pathname
           }
         )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
           Fluid.plugins.imageCaption(imgSelector);
           Fluid.plugins.fancyBox(imgSelector);
         })
