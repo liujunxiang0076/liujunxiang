@@ -20,8 +20,8 @@
   
     <meta name="description" content="欢迎来到刘俊祥的博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="https://blog.liujunxiang0076.site/archives/2024/06/index.html">
+<meta property="og:title" content="liu">
+<meta property="og:url" content="https://blog.liujunxiang0076.site/page/2/index.html">
 <meta property="og:site_name" content="liu">
 <meta property="og:description" content="欢迎来到刘俊祥的博客">
 <meta property="og:locale" content="zh_CN">
@@ -30,7 +30,7 @@
   
   
   
-  <title>归档 - liu</title>
+  <title>liu</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -84,7 +84,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 40vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -244,13 +244,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/bg_sun.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/bg/bg_sky.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle" data-typed-text="欢迎"></span>
           
         </div>
 
@@ -277,29 +277,75 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 18 篇文章</p>
-  <hr>
-  
-  
+
+  <div class="row mx-auto index-card">
     
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/07/30/first/" target="_self">
+          第一篇
+        </a>
+      </h2>
+
       
-      <p class="h5">2024</p>
-    
-    <a href="/2024/06/24/%E8%AE%B0%E5%BD%95%E4%BA%8B%E9%A1%B9/" class="list-group-item list-group-item-action">
-      <time>06-24</time>
-      <div class="list-group-item-title">记录事项</div>
-    </a>
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/07/30/first/" target="_self">
+        <div>
+          有东西被加密了, 请输入密码查看.
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-07-30 09:48" pubdate>
+              2023-07-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/2024/06/20/HTML%E4%B8%ADvideo%E8%87%AA%E5%8A%A8%E5%BE%AA%E7%8E%AF%E6%92%AD%E6%94%BE/" class="list-group-item list-group-item-action">
-      <time>06-20</time>
-      <div class="list-group-item-title">HTML嵌入视频</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/" class="category-chain-item">技术栈</a>
   
-</div>
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%A0%88/hexo/" class="category-chain-item">hexo</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
 
 
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
 
 
 
@@ -387,7 +433,37 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        typing(text);
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://v1.hitokoto.cn/?c=i',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'hitokoto'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            apiText ? typing(apiText) : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://v1.hitokoto.cn/?c=i:', error);
+            }
+            typing(text);
+          }
+        })
       
     })(window, document);
   </script>
